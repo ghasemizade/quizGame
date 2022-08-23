@@ -14,9 +14,7 @@ class Application extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(fontFamily: 'vazir_medium'),
-      home: Scaffold(
-        body: splashScreen(),
-      ),
+      home: splashScreen(),
     );
   }
 }
