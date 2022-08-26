@@ -1,8 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:quiz_game/constant/constant.dart';
 
-class quizPage extends StatelessWidget {
+class quizPage extends StatefulWidget {
   const quizPage({Key? key}) : super(key: key);
 
+  @override
+  State<quizPage> createState() => _quizPageState();
+}
+
+class _quizPageState extends State<quizPage> {
+  int showSelectedQuestionIndex = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -28,7 +35,7 @@ class quizPage extends StatelessWidget {
                 height: 20.0,
               ),
               Text(
-                'مشهور ترین شعبده باز دنیا کیست؟',
+                getQuestionsList()[showSelectedQuestionIndex].questoinTitle!,
                 textAlign: TextAlign.center,
                 style: TextStyle(fontSize: 20.0),
               ),
