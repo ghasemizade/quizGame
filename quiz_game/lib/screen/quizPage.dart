@@ -15,7 +15,7 @@ class _quizPageState extends State<quizPage> {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'سوال‌ها',
+          'سوال‌',
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
         elevation: 0,
