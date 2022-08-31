@@ -3,7 +3,7 @@ import 'package:quiz_game/data/quiz.dart';
 List<Question> getQuestionsList() {
   var firstQuestion = Question();
   firstQuestion.questoinTitle = 'مشهور ترین شعبده‌باز جهان کیست؟';
-  firstQuestion.imageNameNumber = '0';
+  firstQuestion.imageNameNumber = '1';
   firstQuestion.correctAnswer = 2;
   firstQuestion.answerList = [
     'هری هودینی',
